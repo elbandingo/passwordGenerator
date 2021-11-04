@@ -123,6 +123,7 @@ var randomPassword = "";
 for(var i = 0; i < numberOfChars; i++) {
   randomPassword = randomPassword + choices[Math.floor(Math.random()*choices.length)];
   console.log(randomPassword);
+  
 }
 
 
