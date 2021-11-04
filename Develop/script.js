@@ -116,14 +116,14 @@ else if(specialCharSelect) {
 }
 
 
-//decalare an empty variable for the randomly generated password that will be filled in after the for loop
+//decalare an empty variable for the randomly generated password that will be filled in as the loop runs
 var randomPassword = "";
 
 //run a loop to go through the choice options that have been selected by the user, and use random math method to generate based on number of chars picked
 for(var i = 0; i < numberOfChars; i++) {
   randomPassword = randomPassword + choices[Math.floor(Math.random()*choices.length)];
   console.log(randomPassword);
-  
+
 }
 
 
