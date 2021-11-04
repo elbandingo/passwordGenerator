@@ -1,4 +1,4 @@
-# Password Generator Starter Code
+# Password Generator
 This project was created as a bootcamp homework assignment focused on Javascript.
 
 # Program Summary
