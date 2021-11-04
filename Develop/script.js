@@ -5,8 +5,7 @@ const lowerOptions = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o
 const upperOptions = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 const numberOptions = ["1","2","3","4","5","6","7","8","9"];
 const specialOptions = ["!","@","#","$","%","^","&","*","?","(",")","{","}"];
-//define an empty variable for their choices, which will be concatenated later based on user choices
-var choices = [];
+
 
 
 function generatePassword() {
@@ -18,7 +17,7 @@ console.log("hey you clicked the button");
 var numberOfChars = prompt("How many characters will your password be?");
 if(numberOfChars < 8 || numberOfChars > 128) {
   alert("must be between 8 and 28");
-  generatePassword();
+  generatePassword(); //restart the function
 }
 
 //  b. Confirm if the user wants lower case included
@@ -34,9 +33,13 @@ var numberCaseSelect = confirm("Do you want numbers included in your password?")
 var specialCharSelect = confirm("Do you want special characters included in your password?");
 
 //  f. validate that they have chosen at least 1 of the 4 options
+
+//define an empty variable for their choices, which will be concatenated later based on user choices
+var choices = [];
+
 if(!lowerCaseSelect && !upperCaseSelect && !numberCaseSelect && !specialCharSelect) {
   alert("You must make at least 1 character selection");
-  generatePassword();
+  generatePassword(); //restart the function
 }
 
 //start going through the different options the user has selected, and set the choices variable to equal their choices
