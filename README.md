@@ -10,3 +10,7 @@ This javascript program provides users with the ability to input the following s
 5. Confirmation of use of special characters
 
 Once all user input has been obtained, a newly created password will generate at the center of your screen
+
+Deployed Git URL: https://elbandingo.github.io/passwordGenerator/
+
+Git source URL: https://github.com/elbandingo/passwordGenerator
