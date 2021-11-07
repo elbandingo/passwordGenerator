@@ -71,7 +71,7 @@ else if(upperCaseSelect && numberCaseSelect && specialCharSelect) {
   console.log(choices);
 }
 
-//else if for 2 choices
+//else if for 2 choices, concatenate
 else if(lowerCaseSelect && upperCaseSelect) {
   choices = lowerOptions.concat(upperOptions);
   console.log(choices);
@@ -125,9 +125,6 @@ for(var i = 0; i < numberOfChars; i++) {
   console.log(randomPassword);
 
 }
-
-
-
 
 
 //make sure you return the value of whats generated, so return the randomPassword
